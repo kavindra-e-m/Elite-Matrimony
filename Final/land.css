@@ -1,0 +1,232 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Lato, sans-serif;
+    font-weight:2%;
+z-index: 1;
+    position: relative;
+}
+.top{
+height: 85px;
+background-color: #fbfcff;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+ .flexbox{
+    background: linear-gradient(to right,rgb(232, 196, 131),rgb(131, 229, 131),pink);
+ }
+.topone h1 {
+    display: inline-block; 
+    margin-right: 20px; 
+    padding: 5px;
+}
+
+.topone ul li {
+    display: inline-block; 
+}
+
+.topone ul {
+   padding: 20px;
+    /margin-left: 900px;/
+    
+}
+ul img{
+    width: 40px;
+}
+.topone ul li:nth-child(1){
+color: orange;
+
+}
+.flexbox{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fbfcff;
+    
+}
+#hoo{
+    color: green;
+   padding-right: 10px;
+}
+.topone ul li:nth-child(2){
+margin-left: 50%;
+
+}
+.oh{
+    padding-left: 5px;
+}
+    
+
+.topone ul li:nth-child(3) {
+    border: 2px solid orange; 
+    border-radius: 5px;
+    padding: 8px;
+    color: orangered;
+    cursor: pointer;
+    
+}
+.text1{
+    text-decoration: none;
+    color: orangered;
+}
+.text2{
+    text-decoration: none;
+    color: orangered;
+}
+.lio{
+    margin-left: 10px;
+    border: 2px solid orange; 
+    border-radius: 5px;
+    padding: 8px;
+    color: orangered;
+    cursor: pointer;
+}
+.help{
+    background-color: lightgrey;
+    height: 300px;
+    width: 300px;
+    
+        background-color: #eeeeee;
+        padding: 4px;
+        margin: 0;
+        box-shadow: 1px 1px 2px #bbbbbb;
+      
+   
+}
+.paratext{
+    margin: 50px;
+    position: relative;
+    z-index: 2;
+
+}
+
+.pone{
+    margin: 20px;
+}
+.flexbox{
+    display: flex;
+    flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-evenly;
+
+
+}
+.flexbox img{
+    height: 200px;
+    width: 200px;
+    border-radius: 5px; 
+    cursor: pointer;
+}
+.flexbox div{
+    margin: 15px;
+    flex-basis:20% ;
+  
+}
+    .verify{
+        height: 50px;
+background-color: #fbfcff;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+margin: 40px;
+
+    }
+    .olo{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        padding: 5px;
+        color: #bbbbbb;
+    }
+    .flexbox p{
+        width: 200px;
+    }
+   .bottom{
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    width: 300px;
+    margin: 15px;
+    padding: 10px;
+   }
+   .imgo{
+    width: 40px;
+   }
+   .ino{
+    padding: 10px;
+   }
+  .about{
+    height: 85vh;
+    display: flex;
+    font-weight:lighter;
+margin-left: 300px;
+  }
+  .about-title{
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 15px;
+
+
+  }
+  .about-pages{
+    width: 50%;
+    margin-top: 9%;
+margin-left: 150px;
+font-size: 15px;
+display: inline-block;
+}
+   .about-pages div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+   }
+   .about-pages div > p{
+width: 80%;
+font-size: 18px;
+line-height: 30px;
+
+   }
+   
+   .para1{
+    margin: 10px;
+    margin-right: 2px;
+ 
+}
+.para2{
+    margin: 10px;
+    margin-right: 2px;
+ 
+}
+.para3{
+    margin: 10px;
+    margin-right: 2px;
+ 
+}
+   .para{
+    margin: 10px;
+    margin-right: 2px;
+   }
+   .about{
+    color: #777777;
+   }
+   .aboutone{
+    width: 50%;
+    margin-top: 9%;
+
+font-size: 15px;
+   }
+   .aboutone{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    margin-right: 100px
+   }

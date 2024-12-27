@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elite Sign-Up</title>
+<style>
+</style>
+<script> 
+
+
+function validateForm() { 
+
+var password = document.getElementById("password").value;
+var confirmPassword = document.getElementById("confirm-password").value;
+var dob = new Date(document.getElementById("dob").value); 
+var today = new Date(); var age = today.getFullYear() - dob.getFullYear();
+var m = today.getMonth() - dob.getMonth();
+var phone = document.getElementById("phone").value; 
+var phonePattern = /^[0-9]{10}$/; 
+
+if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) 
+{ age--; }
+
+
+if (password !== confirmPassword) 
+{ alert("Passwords do not match."); 
+return false; 
+}
+
+
+if (age < 18) { 
+alert("You must be at least 18 years old to register."); 
+return false; 
+}
+
+if (!phonePattern.test(phone)) { 
+alert("Please enter a valid 10-digit phone number."); 
+return false; 
+} 
+return true; 
+} 
+
+
+ return true; 
+</script>
+</head>
+<body>
+    <h1>Member Registration</h1>
+<table>
+    <form method="post" onsubmit="return validateForm()">
+
+
+<tr><th>
+        <label for="name">Name:</label>
+</th><td>
+        <input type="text" id="name" name="name" required>
+</td></tr>
+
+
+<tr><th>
+        <label for="phone">Phone Number:</label>
+</th><td>
+        <input type="tel" id="phone" name="phone" required>
+</td></tr>
+
+
+<tr><th>
+        <label for="email">Email:</label>
+</th><td>
+        <input type="email" id="email" name="email" required>
+</td></tr>
+
+
+<tr><th>
+        <label for="dob">Date of Birth:</label>
+</th><td>
+        <input type="date" id="dob" name="dob" required>
+</td></tr>
+
+
+<tr><th>
+        <label for="religion">Religion:</label>
+</th><td>
+        <input type="text" id="religion" name="religion" required>
+</td></tr>
+
+
+<tr><th>
+        <label for="mothertongue">Mother Tongue:</label>
+</th><td>
+        <input type="text" id="mothertongue" name="mothertongue" required>
+</td></tr>
+
+
+<tr><th>
+        <label for="caste">Caste:</label>
+</th><td>
+        <input type="text" id="caste" name="caste" required>
+</td></tr>
+
+
+<tr><th>
+        <label for="dosham">Dosham:</label>
+</th><td>
+        <input type="text" id="dosham" name="dosham" required>
+</td></tr>
+
+
+<tr><th>
+        <label for="gothram">Gothram:</label>
+</th><td>
+        <input type="text" id="gothram" name="gothram" required></td></tr>
+
+
+<tr><th>
+        <label for="marital-status">Marital Status:</label>
+</th><td>
+        <select id="marital-status" name="marital-status" required>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="divorced">Divorced</option>
+            <option value="widowed">Widowed</option>
+        </select>
+</td></tr>
+
+
+<tr><th>
+        <label for="height">Height:</label>
+</th><td>
+        <input type="number" id="height" name="height" required>
+</td></tr>
+
+
+<tr><th>
+        <label for="qualification">Highest Qualification:</label>
+</th><td>
+        <input type="text" id="qualification" name="qualification" required>
+</td></tr>
+
+
+<tr><th>
+        <label for="income">Annual Income:</label>
+</th><td>
+        <input type="number" id="income" name="income" required>
+</td></tr>
+
+<tr><th>
+<label for="password">Password:</label>
+</th><td>
+<input type="password" id="password" name="password" min="6" max="18" required> 
+</td></tr>
+
+<tr><th>
+<label for="confirm-password">Confirm Password:</label>
+</th><td>
+<input type="password" id="confirm-password" name="confirm-password" required>
+</td></tr>
+
+
+<tr>
+<th>
+<input type="reset" value="Reset">
+</th>
+<td>
+
+        <input type="submit" value="Submit">
+</td></tr>
+
+
+    </form>
+</table>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>	
+	<title>basic calculator</title>
+</head>
+<body>
+	<h1>calculator</h1>
+	<input type="number" id="number1" placeholder="Enter number 1"><br>
+	<input type="number" id="number2" placeholder="Enter number 2"><br>
+	<div>
+		<button onclick="performCalculation('add')">Add</button>
+		<button onclick="performCalculation('subtract')">subtract</button>
+		<button onclick="performCalculation('multiply')">multiply</button>
+		<button onclick="performCalculation('divide')">divide</button>
+	</div>
+	<div class="result" id="result"></div>
+	<script>
+		function add(a,b){return a+b;}
+		function subtract(a,b){return a-b;}
+		function multiply(a,b){return a*b;}
+		function divide(a,b){return a/b;}
+		function performCalculation(operation)
+		{
+			const n1=parseFloat(document.getElementById('number1').value);
+			const n2=parseFloat(document.getElementById('number2').value);
+			let result;
+			switch(operation)
+			{
+				case 'add':result=add(n1,n2);break;
+				case 'subtract':result=subtract(n1,n2);break;
+				case 'multiply':result=multiply(n1,n2);break;
+				case 'divide':result=divide(n1,n2);break;
+				default : result="enter crt operation";
+
+
+}
+		document.getElementById('result').innerText=result;				
+}
+	</script>
+	</body>
+	</html>
+

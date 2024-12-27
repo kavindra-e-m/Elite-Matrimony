@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>exceution</title>
+<body>
+<p id="output"></p>
+<p id="greet"></p>
+<script>
+function divide(a,b){
+try{
+if (b===0){
+throw new Error("Divison by zero is not allowed");
+}
+return a/b;
+}catch (error){
+return ("Error occured : "+ error.message)
+}finally{
+document.getElementById("greet").innerHTML="Have a great day";
+}
+}
+document.getElementById("output").innerHTML=divide(100,0);
+</script>
+</body>
+</head>
+</html>

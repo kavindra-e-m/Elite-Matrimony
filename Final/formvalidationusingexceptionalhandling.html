@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>exceution</title>
+<body>
+<script>
+function validateForm(){
+try{
+let name= document.forms["my forms"]["fname"].value;
+let age=document.forms["my forms"]["age"].value;
+
+if (name===""){
+throw new Error("Name field cannot be empty");
+}
+else if (!/^[A-Za-z]+$/.test(name)){
+throw new Error ("Name must contain only alphabets");
+}
+if(age===""){
+throw 
+}
+
+}catch (error){
+return ("Error occured : "+ error.message)
+}finally{
+document.getElementById("greet").innerHTML="Have a great day";
+}
+}
+document.getElementById("output").innerHTML=divide(100,0);
+</script>
+</body>
+</head>
+</html>
